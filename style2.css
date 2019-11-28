@@ -1,0 +1,16 @@
+
+.body {
+    height: 100vh;
+    background-image: url("fundo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+  .system{
+      background-color: #fff;
+  }
+
+  .form {
+    border: 1px;
+  }

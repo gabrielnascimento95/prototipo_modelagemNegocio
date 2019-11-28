@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <title>Intranet - MRS</title>
+</head>
+
+<body class="system">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="mrs.png" width="100" height="30" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="index.html">Início <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="funcionario.html">Funcionários</a>
+                    <a class="nav-item nav-link" href="veiculo.html">Veículos</a>
+                    <a class="nav-item nav-link" href="solicitacaoFuncionario.html">Solicitações - Funcionário</a>
+                    <a class="nav-item nav-link" href="solicitacaoSupervisor.html">Solicitações - Supervisor</a>
+                    <a class="nav-item nav-link" href="solicitacaoGerente.html">Solicitações - Gerente</a>
+                    <a class="nav-item nav-link" href="login.html">Sair</a>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <br />
+            <h3>Gestão da frota</h3>
+            <h6>Novo veiculo</h6>
+            <form class="form">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="nome">Modelo</label>
+                        <input type="nome" class="form-control" id="nome" placeholder="Modelo">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="idade">Marca</label>
+                        <input type="text" class="form-control" id="idade" placeholder="Marca">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="cpf">Ano</label>
+                        <input type="number" class="form-control" id="cpf" placeholder="Ano">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="rg">KM</label>
+                        <input type="text" class="form-control" id="rg" placeholder="KM">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="funcao">Eixos</label>
+                        <select id="funcao" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>2</option>
+                            <option>4</option>
+                            <option>6</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="setor">Capacidade carga</label>
+                        <select id="setor" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>1 TON</option>
+                            <option>2 TON</option>
+                            <option>5 TON</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="setor">Unidade</label>
+                        <select id="setor" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>Juiz de Fora</option>
+                            <option>Cajamar</option>
+                            <option>Belo Horizonte</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                            <label for="rg">Valor</label>
+                            <input type="money" class="form-control" id="rg" placeholder="R$">
+                        </div>
+                </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

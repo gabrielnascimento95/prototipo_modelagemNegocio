@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <title>Intranet - MRS</title>
+</head>
+
+<body class="system">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="mrs.png" width="100" height="30" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">Início <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="funcionario.html">Funcionários</a>
+                    <a class="nav-item nav-link" href="veiculo.html">Veículos</a>
+                    <a class="nav-item nav-link" href="solicitacaoFuncionario.html">Solicitações - Funcionário</a>
+                    <a class="nav-item nav-link" href="solicitacaoSupervisor.html">Solicitações - Supervisor</a>
+                    <a class="nav-item nav-link" href="solicitacaoGerente.html">Solicitações - Gerente</a>
+                    <a class="nav-item nav-link" href="login.html">Sair</a>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <br />
+            <h3>Gestão de solicitações</h3>
+            <h6>Nova solicitacao</h6>
+            <form class="form">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="nome">Nome</label>
+                        <input type="nome" class="form-control" id="nome" placeholder="nome"  value="Serafim" disabled="disabled">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="cpf">CPF</label>
+                        <input type="number" class="form-control" id="cpf" placeholder="cpf" value="546161615616" disabled="disabled">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="setor">Setor</label>
+                        <select id="setor" class="form-control" disabled="disabled">
+                            <option >Choose...</option>
+                            <option>Transporte</option>
+                            <option>Comercial</option>
+                            <option selected>Relacionamento</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="setor">Data Ida</label>
+                        <input type="date" class="form-control" id="dataIda" >
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="setor">Data Volta</label>
+                        <input type="date" class="form-control" id="dataFim">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="setor">Veiculo</label>
+                        <select id="setor" class="form-control" disabled="disabled">
+                            <option >Choose...</option>
+                            <option>Pequeno</option>
+                            <option selected>Medio</option>
+                            <option>Grande</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="setor">Distacia</label>
+                        <select id="setor" class="form-control" disabled="disabled">
+                            <option >Choose...</option>
+                            <option>100-200 KM</option>
+                            <option selected>200-400 KM</option>
+                            <option>400-600 KM</option>
+                        </select>
+                    </div>
+                </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">Cidade</label>
+                <input type="text" class="form-control" id="inputCity" value="Juiz de Fora" disabled="disabled">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">Estado</label>
+                <select id="inputState" class="form-control" disabled="disabled">
+                    <option >Choose...</option>
+                    <option selected>Minas Gerais</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">CEP</label>
+                <input type="text" class="form-control" id="inputZip" value="36451-650" disabled="disabled">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">Motivo</label>
+                <input type="text" class="form-control" id="inputCity" value="obs obs obs" disabled="disabled">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputCity">Observacao</label>
+                <input type="text" class="form-control" id="inputCity" value="motivo secreto" disabled="disabled">
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Imprimir</button>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
